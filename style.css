@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+    overflow: auto;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgb(26, 26, 26), rgb(30, 30, 30), black);
+    padding: 20px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}    
+
+section {
+    height: 100%;
+    width: 440px;
+    background-color: black;
+    margin: auto;
+    margin-left: 600px;
+    border-radius: 10px;
+}
+
+.allReels {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.reel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: brown;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.reel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.reel .bottom {
+    width: 100%;
+    position: absolute;
+    background-color: linear-gradient(rgba(33, 32, 32, 0.476), rgba(15, 15, 15, 0.795));
+    bottom: 0;
+}
+
+.bottom .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.bottom .user img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 15px;
+    object-fit: cover;
+}
+
+.bottom .user button {
+    padding: 3px 9px;
+    border: none;
+    border-radius: 2px 4px;
+    border: 1px white solid;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom > h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.right {
+    position: absolute;
+    right: -50px;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right i {
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.right h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.right > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
